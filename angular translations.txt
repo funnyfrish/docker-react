@@ -1,0 +1,33 @@
+load("@npm_angular_bazel//:index.bzl", "ng_module")
+load("//tools:angular_ts_library.bzl", "ng_ts_library")
+
+
+ng_module
+ng_ts_library
+
+load("@npm_bazel_typescript//:index.bzl", "ts_library")
+load("@npm//@bazel/typescript:index.bzl", "ts_library")
+
+load("@npm_bazel_karma//:index.bzl", "karma_web_test_suite", "ts_web_test", "karma_web_test")
+load("@npm_bazel_karma//:index.bzl", "karma_web_test_suite")
+load("@npm//@bazel/karma:index.bzl", "karma_web_test_suite")
+
+"@npm//@types/lodash-es",
+"@npm//lodash-es",
+
+#    "@npm//rxjs",
+    "@npm//rxjs",
+
+assets
+angular_assets
+"@npm//rxjs"
+from "../public_api";
+from "./public_api" muss überall raus
+lib components buy-box - buy-box.module.ts import nie über public.api
+
+carousel fehtl forms import für ngmodule
+loading-sprinner nie über public api import
+snackbar import nicht über public.api
+
+injection-tokens/injection-tokens.ts - rxjs
+
